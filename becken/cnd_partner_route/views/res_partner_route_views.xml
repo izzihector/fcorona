@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="res_partner_route_tree_view" model="ir.ui.view">
+        <field name="name">res.partner.route.tree.view</field>
+        <field name="model">res.partner.route</field>
+        <field name="priority" eval="1"/>
+        <field name="arch" type="xml">
+            <tree string="Partner Route">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="res_partner_route_form_view" model="ir.ui.view">
+        <field name="name">res.partner.route.form.view</field>
+        <field name="model">res.partner.route</field>
+        <field name="priority" eval="1"/>
+        <field name="arch" type="xml">
+            <form string="Partner Route">
+                <sheet>
+                    <group>
+                        <group name="route">
+                            <field name="name"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="res_partner_route_action" model="ir.actions.act_window">
+        <field name="name">Partner Route</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.partner.route</field>
+        <field name="context">{}</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+            </p>
+        </field>
+    </record>
+
+    <record id="res_partner_route_action_tree" model="ir.actions.act_window.view">
+        <field eval="1" name="sequence"/>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="cnd_partner_route.res_partner_route_tree_view"/>
+        <field name="act_window_id" ref="res_partner_route_action"/>
+    </record>
+
+    <record id="res_partner_route_action_form" model="ir.actions.act_window.view">
+        <field eval="3" name="sequence"/>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="cnd_partner_route.res_partner_route_form_view"/>
+        <field name="act_window_id" ref="res_partner_route_action"/>
+    </record>
+
+    <menuitem name="Partner Routes" action="res_partner_route_action" id="res_partner_route_menuitem" parent="sale.menu_sale_config" sequence="2"/>
+</odoo>

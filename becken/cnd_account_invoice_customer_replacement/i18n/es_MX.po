@@ -1,0 +1,82 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* cnd_account_invoice_customer_replacement
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-01-06 03:19+0000\n"
+"PO-Revision-Date: 2021-01-06 03:19+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: cnd_account_invoice_customer_replacement
+#: model:ir.model,name:cnd_account_invoice_customer_replacement.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: cnd_account_invoice_customer_replacement
+#: model:ir.model,name:cnd_account_invoice_customer_replacement.model_res_config_settings
+msgid "Config Settings"
+msgstr "Opciones de Configuración"
+
+#. module: cnd_account_invoice_customer_replacement
+#: model:ir.model,name:cnd_account_invoice_customer_replacement.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: cnd_account_invoice_customer_replacement
+#: model:ir.model.fields,field_description:cnd_account_invoice_customer_replacement.field_res_company__enable_invoice_customer_replacement
+#: model:ir.model.fields,field_description:cnd_account_invoice_customer_replacement.field_res_config_settings__enable_invoice_customer_replacement
+#: model:ir.model.fields,field_description:cnd_account_invoice_customer_replacement.field_res_partner__enable_invoice_customer_replacement
+#: model:ir.model.fields,field_description:cnd_account_invoice_customer_replacement.field_res_users__enable_invoice_customer_replacement
+msgid "Enable Invoice Customer Replacement"
+msgstr "Habilitar reemplazo de cliente en facturas"
+
+#. module: cnd_account_invoice_customer_replacement
+#: model:ir.model.fields,help:cnd_account_invoice_customer_replacement.field_res_partner__enable_invoice_customer_replacement
+#: model:ir.model.fields,help:cnd_account_invoice_customer_replacement.field_res_users__enable_invoice_customer_replacement
+msgid "Enable the invoice customer replacement for this partner."
+msgstr "Habilita el reemplazo de cliente para esta empresa."
+
+#. module: cnd_account_invoice_customer_replacement
+#: model:ir.model.fields,help:cnd_account_invoice_customer_replacement.field_res_company__enable_invoice_customer_replacement
+#: model:ir.model.fields,help:cnd_account_invoice_customer_replacement.field_res_config_settings__enable_invoice_customer_replacement
+msgid "Enable the invoice customer replacement in partner form."
+msgstr "Habilita el reemplazo de cliente en el formulario del cliente."
+
+#. module: cnd_account_invoice_customer_replacement
+#: model_terms:ir.ui.view,arch_db:cnd_account_invoice_customer_replacement.cnd_account_invoice_customer_replacement_partner_search_view
+msgid "Invoice Customer Replacement"
+msgstr "Reemplazo de Cliente en Factura"
+
+#. module: cnd_account_invoice_customer_replacement
+#: model_terms:ir.ui.view,arch_db:cnd_account_invoice_customer_replacement.cnd_account_invoice_customer_replacement_partner_search_view
+msgid "Invoice Customer Replacement Enabled"
+msgstr "Reemplazo de Cliente en Factura Habilitado"
+
+#. module: cnd_account_invoice_customer_replacement
+#: model:ir.model,name:cnd_account_invoice_customer_replacement.model_account_move
+msgid "Journal Entries"
+msgstr "Asientos contables"
+
+#. module: cnd_account_invoice_customer_replacement
+#: model:ir.model,name:cnd_account_invoice_customer_replacement.model_account_payment
+msgid "Payments"
+msgstr "Pagos"
+
+#. module: cnd_account_invoice_customer_replacement
+#: model:ir.model.fields,field_description:cnd_account_invoice_customer_replacement.field_res_company__invoice_replacement_customer_id
+#: model:ir.model.fields,field_description:cnd_account_invoice_customer_replacement.field_res_config_settings__invoice_replacement_customer_id
+msgid "Replacement Customer"
+msgstr "Cliente de Reemplazo"
+
+#. module: cnd_account_invoice_customer_replacement
+#: model:ir.model.fields,field_description:cnd_account_invoice_customer_replacement.field_account_move__temp_partner_id
+msgid "Temporal Customer"
+msgstr "Cliente Temporal"

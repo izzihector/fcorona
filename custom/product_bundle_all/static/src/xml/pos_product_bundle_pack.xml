@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="pos_product_bundle_pack_template" inherit_id="point_of_sale.template" xml:space="preserve">
+
+	<!-- Product WIdget -->
+	<t t-extend="Product" t-inherit="point_of_sale.ProductItem" t-inherit-mode="extension" owl="1">	
+		<xpath expr="//div[hasclass('product-img')]" position="inside">
+				<div class="product-bundle-pack" t-if="props.product.is_pack" style="position: absolute; box-sizing: border-box; bottom: 0;top: 65px; line-height: 15px; width: 100%; height: 30px; overflow: hidden; text-overflow: ellipsis; background: #FD142A; color: #fff; padding: 3px; padding-top: 5px;">
+				Pack Product
+				</div>
+		</xpath>
+	</t>
+
+
+	<!-- Orderline WIdget -->
+	<t t-name="Orderline" t-inherit="point_of_sale.Orderline" t-inherit-mode="extension" owl="1">
+		<xpath expr="//ul[hasclass('info-list')]" position="after">
+			<t t-if="props.line.get_product_bundle_pack()">
+				<ul class="info-list">
+					<t t-foreach="props.line.get_product_bundle_pack()" t-as="orderline">
+						<span class="product-name">
+							<t t-esc='orderline.product.display_name' />
+
+						</span>
+						<li class="info">
+							<em>
+								<t t-esc='orderline.product.qty_uom' />
+							</em>
+							<t t-esc='orderline.product.uom_id[1]' />
+							at
+							<t t-esc='env.pos.format_currency(orderline.product.price)' />
+							/
+							 <t t-esc='orderline.product.uom_id[1]' />
+						</li>
+					</t>
+				</ul>
+			</t>
+		</xpath>
+	</t>
+
+
+
+
+	<t t-name="OrderReceipt" t-inherit="point_of_sale.OrderLinesReceipt" t-inherit-mode="extension" owl="1">
+		<xpath expr="//t[@t-if='isSimple(line)']//div" position="after">
+
+						<t t-if="line.get_product_bundle_pack">
+							<ul class="info-list" style="margin-left: 10px;">
+								<t t-foreach="line.get_product_bundle_pack" t-as="line_" t-key="line_.id">
+									<b class="product-name">
+										<t t-esc='line_.product.display_name' />
+									</b>
+									<li class="info">
+										<em>
+											<t t-esc='line_.product.qty_uom' />
+										</em>
+										<t t-esc='line_.product.uom_id[1]' />
+										at
+										<t t-esc='env.pos.format_currency(line_.product.price)' />
+									</li>
+								  </t>
+							</ul>
+						</t>
+
+		</xpath>
+	</t>
+ 
+	
+</templates>
+	
+	

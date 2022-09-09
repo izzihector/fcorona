@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="supplier_category_tree_view" model="ir.ui.view">
+        <field name="name">supplier.category.tree.view</field>
+        <field name="model">supplier.category</field>
+        <field name="priority" eval="1"/>
+        <field name="arch" type="xml">
+            <tree string="Supplier Category">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="supplier_category_form_view" model="ir.ui.view">
+        <field name="name">supplier.category.form.view</field>
+        <field name="model">supplier.category</field>
+        <field name="priority" eval="1"/>
+        <field name="arch" type="xml">
+            <form string="Supplier Category">
+                <sheet>
+                    <group>
+                        <group name="category">
+                            <field name="name"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="supplier_category_action" model="ir.actions.act_window">
+        <field name="name">Supplier Category</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">supplier.category</field>
+        <field name="context">{}</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+            </p>
+        </field>
+    </record>
+
+    <record id="supplier_category_action_tree" model="ir.actions.act_window.view">
+        <field eval="1" name="sequence"/>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="cnd_partner_route.supplier_category_tree_view"/>
+        <field name="act_window_id" ref="supplier_category_action"/>
+    </record>
+
+    <record id="supplier_category_action_form" model="ir.actions.act_window.view">
+        <field eval="3" name="sequence"/>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="cnd_partner_route.supplier_category_form_view"/>
+        <field name="act_window_id" ref="supplier_category_action"/>
+    </record>
+
+    <menuitem name="Supplier Categories" action="supplier_category_action" id="supplier_category_menuitem" parent="purchase.menu_purchase_config" sequence="2"/>
+</odoo>

@@ -1,0 +1,134 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* bck_shipping_method_multiple_zip_ranges
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-23 18:04+0000\n"
+"PO-Revision-Date: 2022-05-23 18:04+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bck_shipping_method_multiple_zip_ranges
+#: model:ir.model.fields,field_description:bck_shipping_method_multiple_zip_ranges.field_delivery_carrier_zip__create_uid
+msgid "Created by"
+msgstr "Creador por"
+
+#. module: bck_shipping_method_multiple_zip_ranges
+#: model:ir.model.fields,field_description:bck_shipping_method_multiple_zip_ranges.field_delivery_carrier_zip__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: bck_shipping_method_multiple_zip_ranges
+#: model:delivery.carrier,name:bck_shipping_method_multiple_zip_ranges.delivery_carrier_dhl_estandard_with_insurance
+msgid "DHL Estándard con Seguro"
+msgstr ""
+
+#. module: bck_shipping_method_multiple_zip_ranges
+#: model:delivery.carrier,name:bck_shipping_method_multiple_zip_ranges.delivery_carrier_dhl_estandard
+msgid "DHL Standard"
+msgstr ""
+
+#. module: bck_shipping_method_multiple_zip_ranges
+#: model:ir.model.fields,field_description:bck_shipping_method_multiple_zip_ranges.field_delivery_carrier_zip__delivery_carrier_id
+msgid "Delivery Carrier"
+msgstr "Método de Envío"
+
+#. module: bck_shipping_method_multiple_zip_ranges
+#: model:ir.model.fields,field_description:bck_shipping_method_multiple_zip_ranges.field_delivery_carrier_zip__display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: bck_shipping_method_multiple_zip_ranges
+#: model:ir.model.fields,field_description:bck_shipping_method_multiple_zip_ranges.field_delivery_carrier_zip__id
+msgid "ID"
+msgstr ""
+
+#. module: bck_shipping_method_multiple_zip_ranges
+#: model:ir.model.fields,help:bck_shipping_method_multiple_zip_ranges.field_delivery_carrier__is_exclusive
+msgid ""
+"If a Deliverry Carrier is Exclusive, is not necessary to show the next "
+"Delivery Carries, it's important sort by sequence."
+msgstr ""
+"Si un Método de envío es Exclusivo, no es necesario mostrar el siguiente "
+"Método de envío que no sean Exclusivos, importante ordenar por secuencia."
+
+#. module: bck_shipping_method_multiple_zip_ranges
+#: model:ir.model.fields,field_description:bck_shipping_method_multiple_zip_ranges.field_delivery_carrier__is_exclusive
+msgid "Is Exclusive?"
+msgstr "¿Es exclusivo?"
+
+#. module: bck_shipping_method_multiple_zip_ranges
+#: model:ir.model.fields,field_description:bck_shipping_method_multiple_zip_ranges.field_delivery_carrier_zip____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: bck_shipping_method_multiple_zip_ranges
+#: model:ir.model.fields,field_description:bck_shipping_method_multiple_zip_ranges.field_delivery_carrier_zip__write_uid
+msgid "Last Updated by"
+msgstr "Última modificación por"
+
+#. module: bck_shipping_method_multiple_zip_ranges
+#: model:ir.model.fields,field_description:bck_shipping_method_multiple_zip_ranges.field_delivery_carrier_zip__write_date
+msgid "Last Updated on"
+msgstr "Última modificación el"
+
+#. module: bck_shipping_method_multiple_zip_ranges
+#: model:delivery.carrier,name:bck_shipping_method_multiple_zip_ranges.delivery_carrier_dhl_extended_areas
+msgid "PAQUETE EXPRESS (Zonas extendidas)"
+msgstr ""
+
+#. module: bck_shipping_method_multiple_zip_ranges
+#: model:delivery.carrier,name:bck_shipping_method_multiple_zip_ranges.delivery_carrier_dhl_extended_areas_with_insurance
+msgid "PAQUETE EXPRESS (Zonas extendidas) con Seguro"
+msgstr ""
+
+#. module: bck_shipping_method_multiple_zip_ranges
+#: model:ir.model,name:bck_shipping_method_multiple_zip_ranges.model_sale_order
+msgid "Sales Order"
+msgstr "Orden de venta"
+
+#. module: bck_shipping_method_multiple_zip_ranges
+#: model:ir.model,name:bck_shipping_method_multiple_zip_ranges.model_delivery_carrier
+msgid "Shipping Methods"
+msgstr "Métodos de envío"
+
+#. module: bck_shipping_method_multiple_zip_ranges
+#: model:delivery.carrier,name:bck_shipping_method_multiple_zip_ranges.delivery_carrier_free
+msgid "Yo me hago cargo del traslado"
+msgstr ""
+
+#. module: bck_shipping_method_multiple_zip_ranges
+#: model:ir.model,name:bck_shipping_method_multiple_zip_ranges.model_delivery_carrier_zip
+msgid "Zip Code Range"
+msgstr "Rango de códigos postales"
+
+#. module: bck_shipping_method_multiple_zip_ranges
+#: model:ir.model.fields,field_description:bck_shipping_method_multiple_zip_ranges.field_delivery_carrier__zip_ids
+msgid "Zip Code Ranges"
+msgstr "Rangos de códigos postales"
+
+#. module: bck_shipping_method_multiple_zip_ranges
+#: model:ir.model.fields,field_description:bck_shipping_method_multiple_zip_ranges.field_delivery_carrier_zip__zip_from
+msgid "Zip From"
+msgstr "Código postal desde"
+
+#. module: bck_shipping_method_multiple_zip_ranges
+#: model:ir.model.fields,field_description:bck_shipping_method_multiple_zip_ranges.field_delivery_carrier_zip__zip_to
+msgid "Zip To"
+msgstr "Código postal hasta"
+
+#. module: bck_shipping_method_multiple_zip_ranges
+#: model:delivery.carrier,website_description:bck_shipping_method_multiple_zip_ranges.delivery_carrier_dhl_estandard
+#: model:delivery.carrier,website_description:bck_shipping_method_multiple_zip_ranges.delivery_carrier_dhl_estandard_with_insurance
+#: model:delivery.carrier,website_description:bck_shipping_method_multiple_zip_ranges.delivery_carrier_dhl_extended_areas
+#: model:delivery.carrier,website_description:bck_shipping_method_multiple_zip_ranges.delivery_carrier_dhl_extended_areas_with_insurance
+#: model:delivery.carrier,website_description:bck_shipping_method_multiple_zip_ranges.delivery_carrier_free
+msgid "Zonas con un costo extra por envío"
+msgstr ""

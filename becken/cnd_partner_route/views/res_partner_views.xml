@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="inherit_res_partner_route_form_view" model="ir.ui.view">
+        <field name="name">inherit.res.partner.route.form.view</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='industry_id']" position="after">
+                <field name="route_id" attrs="{'invisible': [('is_company', '=', False)]}" options="{'no_create': True}"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="inherit_res_partner_supplier_category_form_view" model="ir.ui.view">
+        <field name="name">inherit.res.partner.supplier.category.form.view</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="account.view_partner_property_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='property_supplier_payment_term_id']" position="after">
+                <field name="supplier_category_id" options="{'no_create': True}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

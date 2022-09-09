@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access.res.partner.route.user,access_res_partner_route_user,model_res_partner_route,,1,0,0,0
+access.res.partner.route.manager,access_res_partner_route_manager,model_res_partner_route,sales_team.group_sale_manager,1,1,1,1
+access.supplier.category.user,access_supplier_category_user,model_supplier_category,,1,0,0,0
+access.supplier.category.manager,access_supplier_category_manager,model_supplier_category,purchase.group_purchase_manager,1,1,1,1

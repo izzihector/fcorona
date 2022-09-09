@@ -1,0 +1,8 @@
+<odoo>
+    <template id="cnd_restrict_sign_report_invoice_document" inherit_id="l10n_mx_edi.report_invoice_document_mx">
+        <!-- Quitar el warning "Se requiere un timbre de esta factura, pero no está timbrada" si no se requiere timbre -->
+        <xpath expr="//button[starts-with(@t-attf-class, 'btn-danger #{')]/parent::t" position="attributes">
+            <attribute name="t-if">o.l10n_mx_edi_sign_required and o.l10n_mx_edi_cfdi_request in ('on_invoice', 'on_refund') and not is_cfdi_signed and o.edi_state != 'cancelled'</attribute>
+        </xpath>
+    </template>
+</odoo>

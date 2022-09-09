@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<odoo noupdate="1">
+    <record model="res.partner.route" id="res_partner_route_guadalajara">
+        <field name="name">Guadalajara-6</field>
+    </record>
+    <record model="res.partner.route" id="res_partner_route_colima">
+        <field name="name">Colima-7</field>
+    </record>
+    <record model="res.partner.route" id="res_partner_route_zacatecas">
+        <field name="name">Zacatecas-8</field>
+    </record>
+    <record model="res.partner.route" id="res_partner_route_vallarta">
+        <field name="name">Vallarta-9</field>
+    </record>
+    <record model="res.partner.route" id="res_partner_route_mazatlan">
+        <field name="name">Mazatlán-12</field>
+    </record>
+    <record model="res.partner.route" id="res_partner_route_tepic">
+        <field name="name">Tepic-22</field>
+    </record>
+    <record model="res.partner.route" id="res_partner_route_morelia">
+        <field name="name">Morelia-15</field>
+    </record>
+    <record model="res.partner.route" id="res_partner_route_jocotepec">
+        <field name="name">Jocotepec-16</field>
+    </record>
+    <record model="res.partner.route" id="res_partner_route_leon">
+        <field name="name">León-19</field>
+    </record>
+    <record model="res.partner.route" id="res_partner_route_local">
+        <field name="name">Local-27</field>
+    </record>
+    <record model="res.partner.route" id="res_partner_route_foraneo">
+        <field name="name">Foraneo-28</field>
+    </record>
+</odoo>

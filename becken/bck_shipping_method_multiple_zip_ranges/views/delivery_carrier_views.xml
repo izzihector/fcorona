@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="inherit_delivery_price_by_product_delivery_price_rule_form_view" model="ir.ui.view">
+            <field name="name">inherit.delivery.price.by.product.delivery.price.rule.form.view</field>
+            <field name="model">delivery.carrier</field>
+            <field name="inherit_id" ref="delivery.view_delivery_carrier_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='integration_level']" position="after">
+                    <field name="is_exclusive"/>
+                </xpath>
+                <xpath expr="//group[@name='zip_from']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//group[@name='zip_to']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//group[@name='country_details']" position="after">
+                    <group name="zip_ids">
+                        <label for="zip_ids"/>
+                        <field name="zip_ids" nolabel="1">
+                            <form>
+                                <sheet>
+                                    <group>
+                                        <field name="zip_from"/>
+                                        <field name="zip_to"/>
+                                    </group>
+                                </sheet>
+                            </form>
+                            <tree editable="bottom">
+                                <field name="zip_from"/>
+                                <field name="zip_to"/>
+                            </tree>
+                        </field>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="inherit_delivery_price_by_product_delivery_carrier_tree_view" model="ir.ui.view">
+            <field name="name">inherit.delivery.price.by.product.delivery.carrier.tree.view</field>
+            <field name="model">delivery.carrier</field>
+            <field name="inherit_id" ref="delivery.view_delivery_carrier_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='delivery_type']" position="after">
+                    <field name="is_exclusive"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

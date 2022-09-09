@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="cnd_account_invoice_customer_replacement_report_payment_document" inherit_id="account.report_payment_receipt_document">
+            <xpath expr="//t[@t-set='o']" position="after">
+                <t t-if="o.company_id.enable_invoice_customer_replacement and o.partner_id.enable_invoice_customer_replacement">
+                    <t t-esc="o.replace_original_partner(o.company_id.invoice_replacement_customer_id)"/>
+                </t>
+            </xpath>
+            <xpath expr="//div[hasclass('page')]" position="after">
+                <t t-if="o.company_id.enable_invoice_customer_replacement and o.temp_partner_id.enable_invoice_customer_replacement">
+                    <span t-esc="o.return_original_partner()"/>
+                </t>
+            </xpath>
+        </template>
+    </data>
+</odoo>

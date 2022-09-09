@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="inherit_account_move_route_tree_view" model="ir.ui.view">
+        <field name="name">inherit.account.move.route.tree.view</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_invoice_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='state']" position="before">
+                <field name="partner_route_id"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="inherit_account_move_route_form_view" model="ir.ui.view">
+        <field name="name">inherit.account.move.route.form.view</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='invoice_origin']" position="after">
+                <field name="partner_route_id"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="inherit_account_move_route_filter" model="ir.ui.view">
+        <field name="name">inherit.account.move.route.filter</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_account_invoice_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='date']" position="after">
+                <field name="partner_route_id"/>
+                <field name="supplier_category_id"/>
+            </xpath>
+            <xpath expr="//group/filter[@name='status']" position="after">
+                <filter string="Route" name="partner_route_id_group_by" domain="[]" context="{'group_by':'partner_route_id'}"/>
+                <filter string="Supplier Category" name="supplier_category_id_group_by" domain="[]" context="{'group_by':'supplier_category_id'}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="cnd_account_invoice_customer_replacement_partner_tree_view" model="ir.ui.view">
+            <field name="name">cnd.account.invoice.customer.replacement.partner.tree.view</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_tree"/>
+            <field name="arch" type="xml">
+                <field name="company_id" position="after">
+                    <field name="enable_invoice_customer_replacement" optional="hide"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="cnd_account_invoice_customer_replacement_partner_form_view" model="ir.ui.view">
+            <field name="name">cnd.account.invoice.customer.replacement.partner.form.view</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="account.view_partner_property_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='property_account_position_id']" position="after">
+                    <field name="enable_invoice_customer_replacement"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="cnd_account_invoice_customer_replacement_partner_search_view" model="ir.ui.view">
+            <field name="name">cnd.ccount.invoice.customer.replacement.partner.search.view</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_res_partner_filter"/>
+            <field name="arch" type="xml">
+                <xpath expr="//filter[@name='type_company']" position="after">
+                    <filter string="Invoice Customer Replacement Enabled" name="enable_invoice_customer_replacement" domain="[('enable_invoice_customer_replacement', '=', True)]"/>
+                </xpath>
+                <xpath expr="//filter[@name='group_country']" position="after">
+                    <filter name="enable_invoice_customer_replacement" string="Invoice Customer Replacement" context="{'group_by': 'enable_invoice_customer_replacement'}"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,315 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* dev_customer_account_statement
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-30 16:21+0000\n"
+"PO-Revision-Date: 2022-05-30 16:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: dev_customer_account_statement
+#: model:mail.template,body_html:dev_customer_account_statement.dev_partner_send_statement
+msgid ""
+"\n"
+"            \t<p>Dear <b>${object.name}</b>,</p>\n"
+"            \t<p></p>\n"
+"            \t<p> Your Account Statement is Attached in this email</p>\n"
+"            \t\n"
+"            \t<b>Regards,</b><br/>\n"
+"            \t${object.company_id.name or ' '}\n"
+"                "
+msgstr ""
+"\n"
+"            \t<p>Estimado(a) <b>${object.name}</b>,</p>\n"
+"            \t<p></p>\n"
+"            \t<p> Su estado de cuenta se adjunta en este correo electrónico</p>\n"
+"            \t\n"
+"            \t<b>Saludos,</b><br/>\n"
+"            \t${object.company_id.name or ' '}\n"
+"                "
+
+#. module: dev_customer_account_statement
+#: model:mail.template,report_name:dev_customer_account_statement.dev_partner_send_statement
+msgid "${(object.name)} Account Statement"
+msgstr "Estado de cuenta ${(object.name)}"
+
+#. module: dev_customer_account_statement
+#: model:mail.template,subject:dev_customer_account_statement.dev_partner_send_statement
+msgid "${object.name} Account Statement"
+msgstr "Estado de cuenta ${object.name}"
+
+#. module: dev_customer_account_statement
+#: model_terms:ir.ui.view,arch_db:dev_customer_account_statement.cust_statement_main_template
+msgid "<b>Credit Term: </b>"
+msgstr "<b>Plazo de crédito: </b>"
+
+#. module: dev_customer_account_statement
+#: model_terms:ir.ui.view,arch_db:dev_customer_account_statement.cust_statement_main_template
+msgid "<b>Current</b>"
+msgstr "<b>Actual</b>"
+
+#. module: dev_customer_account_statement
+#: model_terms:ir.ui.view,arch_db:dev_customer_account_statement.cust_statement_main_template
+msgid "<b>ACCOUNT STATEMENT</b>"
+msgstr "<b>ESTADO DE CUENTA</b>"
+
+#. module: dev_customer_account_statement
+#: model_terms:ir.ui.view,arch_db:dev_customer_account_statement.cust_statement_main_template
+msgid "<strong>Sub-Total: </strong>"
+msgstr ""
+
+#. module: dev_customer_account_statement
+#: model_terms:ir.ui.view,arch_db:dev_customer_account_statement.cust_statement_main_template
+msgid "<strong>There is nothing due with this customer.</strong>"
+msgstr "<strong>No hay nada adeudado con este cliente.</strong>"
+
+#. module: dev_customer_account_statement
+#: model:ir.model.fields.selection,name:dev_customer_account_statement.selection__customer_statement__month__4
+msgid "APR"
+msgstr "ABR"
+
+#. module: dev_customer_account_statement
+#: model:ir.model.fields.selection,name:dev_customer_account_statement.selection__customer_statement__month__8
+msgid "AUG"
+msgstr "AGO"
+
+#. module: dev_customer_account_statement
+#: model:ir.model.fields,field_description:dev_customer_account_statement.field_customer_statement__aging_by
+msgid "Ageing By"
+msgstr ""
+
+#. module: dev_customer_account_statement
+#: model:ir.model.fields,field_description:dev_customer_account_statement.field_res_partner__aging_by
+#: model:ir.model.fields,field_description:dev_customer_account_statement.field_res_users__aging_by
+msgid "Aging By"
+msgstr "Antigüedad por"
+
+#. module: dev_customer_account_statement
+#: model_terms:ir.ui.view,arch_db:dev_customer_account_statement.cust_statement_main_template
+msgid "As of:"
+msgstr "A partir de:"
+
+#. module: dev_customer_account_statement
+#: model_terms:ir.ui.view,arch_db:dev_customer_account_statement.cust_statement_main_template
+msgid "Balance Due"
+msgstr "Saldo adeudado"
+
+#. module: dev_customer_account_statement
+#: model_terms:ir.ui.view,arch_db:dev_customer_account_statement.view_customer_statement_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: dev_customer_account_statement
+#: model:ir.model,name:dev_customer_account_statement.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: dev_customer_account_statement
+#: model:ir.model.fields,field_description:dev_customer_account_statement.field_customer_statement__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: dev_customer_account_statement
+#: model:ir.model.fields,field_description:dev_customer_account_statement.field_customer_statement__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: dev_customer_account_statement
+#: model:ir.actions.act_window,name:dev_customer_account_statement.action_customer_statement
+msgid "Customer Account Statement"
+msgstr "Estado de cuenta del cliente"
+
+#. module: dev_customer_account_statement
+#: model:ir.actions.report,name:dev_customer_account_statement.report_customer_statement
+#: model:ir.model,name:dev_customer_account_statement.model_customer_statement
+#: model_terms:ir.ui.view,arch_db:dev_customer_account_statement.view_customer_statement_form
+msgid "Customer Statement"
+msgstr "Estado de Cuenta del cliente"
+
+#. module: dev_customer_account_statement
+#: model:mail.template,name:dev_customer_account_statement.dev_partner_send_statement
+msgid "Customer Statement to Partner"
+msgstr "Estado de Cuenta a la Empresa"
+
+#. module: dev_customer_account_statement
+#: model:ir.model.fields.selection,name:dev_customer_account_statement.selection__customer_statement__month__12
+msgid "DEC"
+msgstr "DIC"
+
+#. module: dev_customer_account_statement
+#: model_terms:ir.ui.view,arch_db:dev_customer_account_statement.view_customer_statement_form
+msgid "Date As on"
+msgstr "Fecha a partir de"
+
+#. module: dev_customer_account_statement
+#: model_terms:ir.ui.view,arch_db:dev_customer_account_statement.cust_statement_main_template
+msgid "Description"
+msgstr "Descripción"
+
+#. module: dev_customer_account_statement
+#: model:ir.model.fields,field_description:dev_customer_account_statement.field_customer_statement__display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: dev_customer_account_statement
+#: model:ir.model.fields.selection,name:dev_customer_account_statement.selection__customer_statement__aging_by__due_date
+#: model:ir.model.fields.selection,name:dev_customer_account_statement.selection__res_partner__aging_by__due_date
+#: model_terms:ir.ui.view,arch_db:dev_customer_account_statement.cust_statement_main_template
+msgid "Due Date"
+msgstr "Fecha de vencimiento"
+
+#. module: dev_customer_account_statement
+#: model_terms:ir.ui.view,arch_db:dev_customer_account_statement.external_customer_sta_header
+msgid "Email:"
+msgstr ""
+
+#. module: dev_customer_account_statement
+#: model:ir.model.fields.selection,name:dev_customer_account_statement.selection__customer_statement__month__2
+msgid "FEB"
+msgstr ""
+
+#. module: dev_customer_account_statement
+#: model:ir.model.fields,field_description:dev_customer_account_statement.field_customer_statement__id
+msgid "ID"
+msgstr ""
+
+#. module: dev_customer_account_statement
+#: model_terms:ir.ui.view,arch_db:dev_customer_account_statement.cust_statement_main_template
+msgid "Invoice #"
+msgstr "Factura #"
+
+#. module: dev_customer_account_statement
+#: model_terms:ir.ui.view,arch_db:dev_customer_account_statement.cust_statement_main_template
+msgid "Invoice Amt"
+msgstr "Monto de la factura"
+
+#. module: dev_customer_account_statement
+#: model:ir.model.fields.selection,name:dev_customer_account_statement.selection__customer_statement__aging_by__inv_date
+#: model:ir.model.fields.selection,name:dev_customer_account_statement.selection__res_partner__aging_by__inv_date
+#: model_terms:ir.ui.view,arch_db:dev_customer_account_statement.cust_statement_main_template
+msgid "Invoice Date"
+msgstr "Fecha de la factura"
+
+#. module: dev_customer_account_statement
+#: model:ir.model.fields.selection,name:dev_customer_account_statement.selection__customer_statement__month__1
+msgid "JAN"
+msgstr "ENE"
+
+#. module: dev_customer_account_statement
+#: model:ir.model.fields.selection,name:dev_customer_account_statement.selection__customer_statement__month__7
+msgid "JUL"
+msgstr ""
+
+#. module: dev_customer_account_statement
+#: model:ir.model.fields.selection,name:dev_customer_account_statement.selection__customer_statement__month__6
+msgid "JUN"
+msgstr ""
+
+#. module: dev_customer_account_statement
+#: model:ir.model.fields,field_description:dev_customer_account_statement.field_customer_statement____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: dev_customer_account_statement
+#: model:ir.model.fields,field_description:dev_customer_account_statement.field_customer_statement__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: dev_customer_account_statement
+#: model:ir.model.fields,field_description:dev_customer_account_statement.field_customer_statement__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización en"
+
+#. module: dev_customer_account_statement
+#: model:ir.model.fields.selection,name:dev_customer_account_statement.selection__customer_statement__month__3
+msgid "MAR"
+msgstr ""
+
+#. module: dev_customer_account_statement
+#: model:ir.model.fields.selection,name:dev_customer_account_statement.selection__customer_statement__month__5
+msgid "MAY"
+msgstr ""
+
+#. module: dev_customer_account_statement
+#: model:ir.model.fields,field_description:dev_customer_account_statement.field_customer_statement__month
+msgid "Month"
+msgstr "Mes"
+
+#. module: dev_customer_account_statement
+#: model:ir.model.fields.selection,name:dev_customer_account_statement.selection__customer_statement__month__11
+msgid "NOV"
+msgstr ""
+
+#. module: dev_customer_account_statement
+#: model:ir.model.fields.selection,name:dev_customer_account_statement.selection__customer_statement__month__10
+msgid "OCT"
+msgstr ""
+
+#. module: dev_customer_account_statement
+#: model:ir.model.fields,field_description:dev_customer_account_statement.field_res_partner__overdue_date
+#: model:ir.model.fields,field_description:dev_customer_account_statement.field_res_users__overdue_date
+msgid "Overdue Date"
+msgstr "Fecha de vencimiento"
+
+#. module: dev_customer_account_statement
+#: model_terms:ir.ui.view,arch_db:dev_customer_account_statement.external_customer_sta_header
+msgid "Page: <span class=\"page\"/> / <span class=\"topage\"/>"
+msgstr "Página: <span class=\"page\"/> / <span class=\"topage\"/>"
+
+#. module: dev_customer_account_statement
+#: model_terms:ir.ui.view,arch_db:dev_customer_account_statement.cust_statement_main_template
+msgid "Payment Amt"
+msgstr "Monto del pago"
+
+#. module: dev_customer_account_statement
+#: model_terms:ir.ui.view,arch_db:dev_customer_account_statement.external_customer_sta_header
+msgid "Phone:"
+msgstr "Teléfono:"
+
+#. module: dev_customer_account_statement
+#: model:ir.model.fields,field_description:dev_customer_account_statement.field_customer_statement__is_privious_year
+msgid "Print Previous Year"
+msgstr "Imprimir año anterior"
+
+#. module: dev_customer_account_statement
+#: model_terms:ir.ui.view,arch_db:dev_customer_account_statement.view_customer_statement_form
+msgid "Print Statement"
+msgstr "Imprimir estado de cuenta"
+
+#. module: dev_customer_account_statement
+#: model:ir.model.fields.selection,name:dev_customer_account_statement.selection__customer_statement__month__9
+msgid "SEP"
+msgstr ""
+
+#. module: dev_customer_account_statement
+#: model_terms:ir.ui.view,arch_db:dev_customer_account_statement.view_customer_statement_form
+msgid "Send"
+msgstr "Enviar"
+
+#. module: dev_customer_account_statement
+#: model:ir.model.fields,field_description:dev_customer_account_statement.field_customer_statement__date_upto
+msgid "Upto Date"
+msgstr "Hasta hoy"
+
+#. module: dev_customer_account_statement
+#: model_terms:ir.ui.view,arch_db:dev_customer_account_statement.external_customer_sta_header
+msgid "Website:"
+msgstr "Sitio Web:"
+
+#. module: dev_customer_account_statement
+#: model_terms:ir.ui.view,arch_db:dev_customer_account_statement.view_customer_statement_form
+msgid "or"
+msgstr "o"
+
+#. module: dev_customer_account_statement
+#: model:ir.model,name:dev_customer_account_statement.model_report_dev_customer_account_statement_cust_statement_template
+msgid "report.dev_customer_account_statement.cust_statement_template"
+msgstr ""

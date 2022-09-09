@@ -1,0 +1,178 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* cnd_partner_route
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-16 15:53+0000\n"
+"PO-Revision-Date: 2022-05-16 15:53+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: cnd_partner_route
+#: model:ir.model.fields,field_description:cnd_partner_route.field_res_partner__supplier_category_id
+#: model:ir.model.fields,field_description:cnd_partner_route.field_res_users__supplier_category_id
+msgid "Category"
+msgstr "Categoría"
+
+#. module: cnd_partner_route
+#: model:ir.model,name:cnd_partner_route.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: cnd_partner_route
+#: model:ir.model.fields,field_description:cnd_partner_route.field_res_partner_route__create_uid
+#: model:ir.model.fields,field_description:cnd_partner_route.field_supplier_category__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: cnd_partner_route
+#: model:ir.model.fields,field_description:cnd_partner_route.field_res_partner_route__create_date
+#: model:ir.model.fields,field_description:cnd_partner_route.field_supplier_category__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: cnd_partner_route
+#: model:ir.model.fields,field_description:cnd_partner_route.field_res_partner_route__display_name
+#: model:ir.model.fields,field_description:cnd_partner_route.field_supplier_category__display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: cnd_partner_route
+#: model:ir.model.fields,field_description:cnd_partner_route.field_res_partner_route__id
+#: model:ir.model.fields,field_description:cnd_partner_route.field_supplier_category__id
+msgid "ID"
+msgstr ""
+
+#. module: cnd_partner_route
+#: model:ir.model,name:cnd_partner_route.model_account_invoice_report
+msgid "Invoices Statistics"
+msgstr "Estadísticas de facturas"
+
+#. module: cnd_partner_route
+#: model:ir.model,name:cnd_partner_route.model_account_move
+msgid "Journal Entry"
+msgstr "Asiento contable"
+
+#. module: cnd_partner_route
+#: model:ir.model.fields,field_description:cnd_partner_route.field_res_partner_route____last_update
+#: model:ir.model.fields,field_description:cnd_partner_route.field_supplier_category____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: cnd_partner_route
+#: model:ir.model.fields,field_description:cnd_partner_route.field_res_partner_route__write_uid
+#: model:ir.model.fields,field_description:cnd_partner_route.field_supplier_category__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: cnd_partner_route
+#: model:ir.model.fields,field_description:cnd_partner_route.field_res_partner_route__write_date
+#: model:ir.model.fields,field_description:cnd_partner_route.field_supplier_category__write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: cnd_partner_route
+#: model:ir.model.fields,field_description:cnd_partner_route.field_res_partner_route__name
+#: model:ir.model.fields,field_description:cnd_partner_route.field_supplier_category__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: cnd_partner_route
+#: model:ir.model.fields,field_description:cnd_partner_route.field_account_invoice_report__partner_route_id
+msgid "Partner Route"
+msgstr "Ruta del Contacto"
+
+#. module: cnd_partner_route
+#: model:ir.actions.act_window,name:cnd_partner_route.res_partner_route_action
+#: model:ir.model,name:cnd_partner_route.model_res_partner_route
+#: model_terms:ir.ui.view,arch_db:cnd_partner_route.partner_route_account_invoice_report_search_view
+#: model_terms:ir.ui.view,arch_db:cnd_partner_route.res_partner_route_form_view
+#: model_terms:ir.ui.view,arch_db:cnd_partner_route.res_partner_route_tree_view
+msgid "Partner Route"
+msgstr "Ruta del Contacto"
+
+#. module: cnd_partner_route
+#: model:ir.ui.menu,name:cnd_partner_route.res_partner_route_menuitem
+msgid "Partner Routes"
+msgstr "Rutas de Clientes"
+
+#. module: cnd_partner_route
+#: model:ir.model.fields,field_description:cnd_partner_route.field_account_bank_statement_line__partner_route_id
+#: model:ir.model.fields,field_description:cnd_partner_route.field_account_move__partner_route_id
+#: model:ir.model.fields,field_description:cnd_partner_route.field_account_payment__partner_route_id
+#: model:ir.model.fields,field_description:cnd_partner_route.field_res_partner__route_id
+#: model:ir.model.fields,field_description:cnd_partner_route.field_res_users__route_id
+#: model:ir.model.fields,field_description:cnd_partner_route.field_sale_order__partner_route_id
+#: model:ir.model.fields,field_description:cnd_partner_route.field_sale_report__partner_route_id
+#: model_terms:ir.ui.view,arch_db:cnd_partner_route.inherit_account_move_route_filter
+#: model_terms:ir.ui.view,arch_db:cnd_partner_route.inherit_sale_order_route_filter
+msgid "Route"
+msgstr "Ruta"
+
+#. module: cnd_partner_route
+#: model:ir.model,name:cnd_partner_route.model_sale_report
+msgid "Sales Analysis Report"
+msgstr "Reporte de análisis de ventas"
+
+#. module: cnd_partner_route
+#: model:ir.model,name:cnd_partner_route.model_sale_order
+msgid "Sales Order"
+msgstr "Orden de venta"
+
+#. module: cnd_partner_route
+#: model:ir.ui.menu,name:cnd_partner_route.supplier_category_menuitem
+msgid "Supplier Categories"
+msgstr "Categorías de Proveedor"
+
+#. module: cnd_partner_route
+#: model:ir.actions.act_window,name:cnd_partner_route.supplier_category_action
+#: model:ir.model,name:cnd_partner_route.model_supplier_category
+#: model:ir.model.fields,field_description:cnd_partner_route.field_account_bank_statement_line__supplier_category_id
+#: model:ir.model.fields,field_description:cnd_partner_route.field_account_invoice_report__supplier_category_id
+#: model:ir.model.fields,field_description:cnd_partner_route.field_account_move__supplier_category_id
+#: model:ir.model.fields,field_description:cnd_partner_route.field_account_payment__supplier_category_id
+#: model:ir.model.fields,field_description:cnd_partner_route.field_sale_report__supplier_category_id
+#: model_terms:ir.ui.view,arch_db:cnd_partner_route.inherit_account_move_route_filter
+#: model_terms:ir.ui.view,arch_db:cnd_partner_route.partner_route_account_invoice_report_search_view
+#: model_terms:ir.ui.view,arch_db:cnd_partner_route.supplier_category_form_view
+#: model_terms:ir.ui.view,arch_db:cnd_partner_route.supplier_category_tree_view
+msgid "Supplier Category"
+msgstr "Categoría de Proveedor"
+
+#. module: cnd_partner_route
+#: model:ir.model.fields,help:cnd_partner_route.field_account_bank_statement_line__partner_route_id
+#: model:ir.model.fields,help:cnd_partner_route.field_account_invoice_report__partner_route_id
+#: model:ir.model.fields,help:cnd_partner_route.field_account_move__partner_route_id
+#: model:ir.model.fields,help:cnd_partner_route.field_account_payment__partner_route_id
+#: model:ir.model.fields,help:cnd_partner_route.field_res_partner__route_id
+#: model:ir.model.fields,help:cnd_partner_route.field_res_users__route_id
+#: model:ir.model.fields,help:cnd_partner_route.field_sale_order__partner_route_id
+#: model:ir.model.fields,help:cnd_partner_route.field_sale_report__partner_route_id
+msgid ""
+"The partner route is a field to categorize partners and can be used in sale "
+"report and invoice report."
+msgstr ""
+"La ruta de clientes es un campo para categorizar clientes y se puede "
+"utilizar en el informe de ventas y el informe de facturas."
+
+#. module: cnd_partner_route
+#: model:ir.model.fields,help:cnd_partner_route.field_account_bank_statement_line__supplier_category_id
+#: model:ir.model.fields,help:cnd_partner_route.field_account_invoice_report__supplier_category_id
+#: model:ir.model.fields,help:cnd_partner_route.field_account_move__supplier_category_id
+#: model:ir.model.fields,help:cnd_partner_route.field_account_payment__supplier_category_id
+#: model:ir.model.fields,help:cnd_partner_route.field_res_partner__supplier_category_id
+#: model:ir.model.fields,help:cnd_partner_route.field_res_users__supplier_category_id
+#: model:ir.model.fields,help:cnd_partner_route.field_sale_report__supplier_category_id
+msgid ""
+"The supplier category is a field to classify suppliers and can be used in "
+"sale report and invoice report."
+msgstr ""
+"La categoría de proveedor es un campo para clasificar a los proveedores y se"
+" puede utilizar en el informe de venta y en el informe de factura."

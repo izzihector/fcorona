@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="inherit_sale_order_route_tree_view" model="ir.ui.view">
+        <field name="name">inherit.sale.order.route.tree.view</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='state']" position="before">
+                <field name="partner_route_id"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="inherit_sale_order_route_form_view" model="ir.ui.view">
+        <field name="name">inherit.sale.order.route.form.view</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='source_id']" position="after">
+                <field name="partner_route_id"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="inherit_sale_order_route_filter" model="ir.ui.view">
+        <field name="name">inherit.sale.order.route.filter</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_sales_order_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='analytic_account_id']" position="after">
+                <field name="partner_route_id"/>
+            </xpath>
+            <xpath expr="//group/filter[@name='order_month']" position="after">
+                <filter string="Route" name="partner_route_id" domain="[]" context="{'group_by':'partner_route_id'}"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="inherit_quotation_route_tree_view" model="ir.ui.view">
+        <field name="name">inherit.quotation.route.tree.view</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_quotation_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='state']" position="before">
+                <field name="partner_route_id"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="l10n_mx_edi_restrict_sign_invoice_report_search" model="ir.ui.view">
+        <field name="name">l10n.mx.edi.void.sign.invoice.report.search</field>
+        <field name="model">account.invoice.report</field>
+        <field name="inherit_id" ref="account.view_account_invoice_report_search"/>
+        <field name="arch" type="xml">
+            <filter name="current" position="after">
+                <separator/>
+                <filter string="With CFDI Sign" name="cfdi_signed" domain="[('l10n_mx_edi_sign_required','=', True)]"/>
+                <filter string="Without CFDI Sign" name="cfdi_signed" domain="[('l10n_mx_edi_sign_required','=', False)]"/>
+            </filter>
+            <xpath expr="//filter[@name='category_product']" position="after">
+                <filter string="Signed" name="l10n_mx_edi_sign_required_grouop" context="{'group_by':'l10n_mx_edi_sign_required'}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
